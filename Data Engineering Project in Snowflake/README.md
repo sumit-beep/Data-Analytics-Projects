@@ -119,6 +119,12 @@ The `consumption_sch.order_item_fact` table is a central component of the consum
 
   ![image](https://github.com/user-attachments/assets/76fb25d0-25e0-4071-8f2a-1ec6112936a5)
 
+## ER Diagram - Consumption Schema
+The Data Model follows Star Schema.
+
+![Screenshot (79)](https://github.com/user-attachments/assets/249820db-2dc2-463a-8398-d2bc714dfff4)
+
+
 ## Pipeline Workflow
 1. **Ingestion (Stage Layer)**:
    - **Initial Load**: CSV files from `Swiggy_Orders_Dataset/initial/<entity-dir>/<load-dir>/*.csv` (e.g., `01-location-csv/01.01-initial-load/location-5rows.csv`) are loaded into stage tables using `COPY INTO`.
